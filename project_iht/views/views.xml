@@ -1,0 +1,14 @@
+<odoo>
+  <record id="view_task_form_inherit_project_iht" model="ir.ui.view">
+    <field name="name">project.task.form.inherit.iht</field>
+    <field name="model">project.project</field>
+    <field name="inherit_id" ref="project.edit_project"/>
+     <field name="arch" type="xml">
+        <xpath expr="//group/field[@name='user_id']" position="after">
+          <field name="lokasi_proyek" />
+          <field name="source_aplikasi_pendukung"/>
+          <field name="daftar_pekerja_remote"/>
+        </xpath>
+     </field>
+  </record>
+</odoo>
